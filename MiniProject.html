@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project in JavaScript</title>
+   <script src="CustomerModule.js"></script>
+     
+</head>
+<body>
+    <script>
+        function AddCustomer(){
+            var name=window.document.getElementById("name").value;
+            var address=window.document.getElementById("address").value;
+            var amount=window.document.getElementById("amount").value;
+           
+            var customer=CustomerModule.Customer();
+
+            customer.setname(name);
+            customer.getname();
+
+            customer.setname(address);
+            customer.getname();
+
+            customer.setname(amount);
+            customer.getname();
+        }
+    </script>
+  <table>
+   <tr>
+        <td>Name  :- </td>
+        <td><input type=text id ="name"></td>   
+    </tr>
+    <tr>
+        <td>Address  :-</td>
+        <td><textarea rows="6" cols="22" id="address"></textarea></td>
+    </tr>
+    <tr>
+        <td>Amount  :-</td>
+        <td><input type=number id="amount"></td>  
+    </tr>
+    <tr>
+       
+        <td><input type="button" onclick="AddCustomer()" value="Submit"/></td>
+       </tr>
+  </table>
+ 
+</body>
+</html>
